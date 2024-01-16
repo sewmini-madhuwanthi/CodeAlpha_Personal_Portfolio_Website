@@ -9,3 +9,10 @@ body{
     background: #000000;
     color: #fff;
 }
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/my4.jpg);
+    background-size: cover;
+    background-position: center;
+}
