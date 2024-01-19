@@ -135,4 +135,6 @@ nav ul li a:hover::after{
 #services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax);
+    grid-gap: 40px;
+    margin-top: 50px;
 }
