@@ -25,19 +25,70 @@
           </div>  
         </div>
     </div>
+    <!-----------about-------------->
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
             <img src="image/download.png">
           </div>
-          <div class="about-col-1">
-            <h1>About Me</h1>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am an undergraduate student at NIBM's School of Computing, passionate about exploring new technologies and gaining extensive knowledge in software engineering. My key interests lie in UI/UX design, web development, and mobile application development. I am a hardworking, responsible, and self-motivated individual with strong communication skills. My competencies include quick learning of programming languages, continuous skill development, effective problem-solving, and adept communication and presentation abilities. I am eager to excel in my career path, seeking opportunities to discuss how my academic and practical knowledge can contribute to your organization's success.</p>
+            
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Design web/app</li>
+                <li> <span>Web development</span><br> Development</li>
+                <li><span>App development</span><br>Building Android App</li>
+  
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2017(OL)</span><br>Ordinary Level from Gokarella central collage</li>
+                <li> <span>2020(AL)</span><br> Advance Level from Ibbagamuwa central collage</li>
+                <li><span>2021(DCSD)</span><br>Diploma in computer system designning from National Institute Of Business Management(NIBM)</li>
+                <li><span>2023(HDSE)</span><br>Higher national diploma in Software Engineering from National Institute Of Business Management(NIBM)</li>
+  
+              </ul>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
+    </body>
+    <!--------services---------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
     
 </body>
 </html>
